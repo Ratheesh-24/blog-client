@@ -1,0 +1,47 @@
+.section__create {
+  width: 50%;
+  margin: 3rem auto;
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .create-form-group {
+    margin: 1rem 0;
+  }
+  .create-form-control,
+  .ql-container {
+    display: block;
+    font-family: inherit;
+    font-size: 1rem;
+  }
+  .ql-editor {
+    white-space: normal !important;
+  }
+  label {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  textarea {
+    height: 100px;
+  }
+  .file-input {
+    width: 60%;
+    display: block;
+    font-family: inherit;
+    color: transparent;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+  .image-preview {
+    width: 90%;
+    display: block;
+    margin: 1rem auto;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .section__create {
+    width: 90%;
+  }
+}

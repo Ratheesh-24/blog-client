@@ -1,0 +1,94 @@
+$color-primary: #ffffff;
+$color-secondary: #000000;
+$color-tertiary: #3bfed6;
+$color-gray: #4b4a4a;
+$color-gray-dark: #29272766;
+$color-info: #51cbee;
+$color-danger-1: #911e29;
+$color-danger-2: #f8d7da;
+$color-danger-3: hsl(354, 88%, 49%);
+$color-success-1: #155724;
+$color-success-2: #d4edda;
+$color-success-3: #359669;
+
+h1 {
+  font-size: 2.5rem;
+}
+
+button {
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn {
+  display: block;
+  width: 40%;
+  margin: auto;
+  padding: 0.8rem 0;
+  font-family: inherit;
+  font-size: 1.2rem;
+  border: none;
+  &__icon {
+    background-color: transparent;
+    border: none;
+  }
+  &--dark {
+    background-color: $color-secondary;
+    color: $color-primary;
+  }
+  &--success {
+    background-color: $color-success-3;
+    color: $color-primary;
+  }
+  &--warning {
+    background-color: $color-danger-3;
+    color: $color-primary;
+  }
+}
+
+.form-text,
+.ql-editor,
+.ql-toolbar {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid $color-secondary;
+  &:focus {
+    box-shadow: 0 0 5px $color-info;
+    border: 1px solid $color-info;
+    outline: none;
+    transition: all 0.4s ease-out;
+  }
+}
+
+.alert {
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  margin: 0 0 1rem 0;
+  &--error {
+    color: $color-danger-1;
+    background: $color-danger-2;
+  }
+  &--success {
+    color: $color-success-1;
+    background: $color-success-2;
+  }
+}
+
+.msg--error {
+  color: $color-danger-3;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,23 @@
+.section__home {
+  margin: 3rem 0 0;
+  text-align: center;
+}
+.paginate-btn-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .paginate-btn {
+    background-color: $color-primary;
+    border: 1px solid $color-secondary;
+    padding: 0.8rem 1.4rem;
+    margin: 0.5rem;
+    &:hover {
+      color: $color-primary;
+      background-color: $color-secondary;
+    }
+  }
+  .page-active {
+    background-color: #000000;
+    color: white;
+  }
+}

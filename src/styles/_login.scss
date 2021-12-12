@@ -1,0 +1,39 @@
+.form-container {
+  width: 35%;
+  margin: auto;
+  h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .form-group {
+    display: block;
+    margin: 1rem 0;
+  }
+  .form-control {
+    display: block;
+  }
+  label {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  .btn {
+    margin: 2rem auto 0.5rem;
+  }
+  .link {
+    float: right;
+    color: $color-secondary;
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .form-container {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .form-container {
+    width: 90%;
+  }
+}

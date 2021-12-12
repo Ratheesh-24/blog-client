@@ -1,0 +1,27 @@
+.errorPage {
+  text-align: center;
+  h1 {
+    margin: 4rem auto 1rem;
+    font-size: 3rem;
+  }
+  a {
+    color: $color-secondary;
+    text-decoration: underline;
+  }
+  .error-svg {
+    width: 30vw;
+    display: block;
+    margin: 5rem auto;
+  }
+}
+
+@media (max-width: 690px) {
+  .errorPage {
+    h1 {
+      font-size: 2rem;
+    }
+    .error-svg {
+      width: 60vw;
+    }
+  }
+}
